@@ -17,7 +17,7 @@ body {
 	letter-spacing: 0.03em;
 }
 
-/* LOGO */
+/* LOGO --- */
 
 .logo-web {
 	font-family: "Raleway";
@@ -33,6 +33,10 @@ body {
 	color: var(--original-black);
 }
 
+/* Reset start --- */
+
+/* Reset ul.list, a.link, h, img */
+
 .list {
 	list-style: none;
 }
@@ -41,7 +45,17 @@ body {
 	text-decoration: none;
 }
 
-/* HEADER */
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+img {
+	display: block;
+}
+
+/* Reset end --- */
+
+/* HEADER --- */
 
 .header {
 	background: var(--original-white);
@@ -75,13 +89,16 @@ body {
 	color: var(--brand);
 }
 
-/* HERO INDEX */
+/* HERO INDEX --- */
 
 .hero {
 	background: var(--hero-bgd);
 }
 
 .title {
+	padding: 200px 0 30px;
+	width: 696px;
+	min-width: 696px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: calc(60 / 44);
@@ -93,6 +110,9 @@ body {
 }
 
 .hero-btn {
+	min-width: 216px;
+	min-height: 50px;
+	padding: 10px 32px;
 	font-family: inherit;
 	background: var(--brand);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -121,9 +141,12 @@ body {
 	cursor: pointer;
 }
 
-/* HERO PORTFOLIO */
+/* HERO PORTFOLIO --- */
 
 .btn-portfolio {
+	min-width: 73px;
+	min-height: 38px;
+	padding: 6px 22px;
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -137,6 +160,7 @@ body {
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
+	padding: 6px 25px;
 	color: var(--original-white);
 	background: var(--brand);
 	/* shadow-middle */
@@ -164,7 +188,23 @@ body {
 	color: var(--contacts);
 }
 
-/* 4 FEATURES */
+/* SECTIONS ALL --- */
+
+/*.section {
+	margin: 94px 215px;
+} */
+
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 2px solid orange;
+	
+}
+
+/* 4 FEATURES --- */
 
 .h3-features {
 	line-height: calc(16 / 14);
@@ -177,7 +217,7 @@ body {
 	color: var(--contacts);
 }
 
-/* W.W.D. */
+/* W.W.D. --- */
 
 .section-title {
 	font-size: 36px;
@@ -185,7 +225,7 @@ body {
 	text-align: center;	
 }
 
-/* TEAM */
+/* TEAM --- */
 
 .h3-team {
 	font-weight: 500;
@@ -214,7 +254,7 @@ body {
 	border-radius: 0px 0px 4px 4px;
 }
 
-/* FOOTER */
+/* FOOTER --- */
 
 .footer {
 	background: var(--hero-bgd);
