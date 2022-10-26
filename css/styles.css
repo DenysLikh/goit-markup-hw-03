@@ -1,0 +1,243 @@
+:root {
+	--brand: #2196f3;
+	--brand-accent: #188ce8;
+	--hero-bgd: #2f303a;
+	--links-plus-buttons: #212121;
+	--contacts: #757575;
+	--team-and-selector-bgr: #F5F4FA;
+	--original-white: #ffffff;
+	--original-black: #000000;
+}
+
+body {
+	font-family: "Roboto", Verdana, sans-serif;
+	font-size: 14px;
+	background-color: var(--original-white);
+	color: var(--links-plus-buttons);
+	letter-spacing: 0.03em;
+}
+
+/* LOGO */
+
+.logo-web {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: calc(31 / 26);
+	letter-spacing: 0.03em;
+	color: var(--brand);
+}
+
+.logo-studio-header {
+	color: var(--original-black);
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+	background: var(--original-white);
+}
+
+.nav-link {
+	font-weight: 500;
+	line-height: calc(16 / 14);
+	color: var(--links-plus-buttons);
+	letter-spacing: 0.02em;	
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--brand);
+}
+
+.active {
+	color: var(--brand);
+}
+
+.header-contacts {
+	font-weight: 500;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+	color: var(--contacts);
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+	color: var(--brand);
+}
+
+/* HERO INDEX */
+
+.hero {
+	background: var(--hero-bgd);
+}
+
+.title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: calc(60 / 44);
+	/* or 136% */
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--original-white);
+}
+
+.hero-btn {
+	font-family: inherit;
+	background: var(--brand);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 0;
+}
+
+.hero-btn-text {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: calc(30 / 16);
+	/* identical to box height, or 188% */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--original-white);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	background: var(--brand-accent);
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+/* HERO PORTFOLIO */
+
+.btn-portfolio {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: calc(26 / 16);
+	/* identical to box height, or 162% */
+	text-align: center;
+	background: var(--team-and-selector-bgr);
+	border-radius: 4px;
+	border: 0;
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+	color: var(--original-white);
+	background: var(--brand);
+	/* shadow-middle */
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+
+.portfolio-item {
+	background: var(--original-white);
+	border: 1px solid #EEE;
+}
+
+.h3-portfolio {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	/* identical to box height, or 200% */
+	letter-spacing: 0.06em;	
+}
+
+.p-portfolio {
+	font-size: 16px;
+	line-height: calc(30 / 16);
+	/* identical to box height, or 188% */
+	color: var(--contacts);
+}
+
+/* 4 FEATURES */
+
+.h3-features {
+	line-height: calc(16 / 14);
+	text-transform: uppercase;	
+}
+
+.p-features {
+	line-height: calc(24 / 14);
+	/* or 171% */
+	color: var(--contacts);
+}
+
+/* W.W.D. */
+
+.section-title {
+	font-size: 36px;
+	line-height: calc(42 / 36);
+	text-align: center;	
+}
+
+/* TEAM */
+
+.h3-team {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: calc(19 / 16);
+	/* identical to box height */
+	text-align: center;	
+}
+
+.p-team {
+	font-size: 16px;
+	line-height: calc(19 / 16);
+	/* identical to box height */
+	text-align: center;
+	color: var(--contacts);
+}
+
+.team-section {
+	background: var(--team-and-selector-bgr);
+}
+
+.team-cards {
+	background: var(--original-white);
+	/* material shadow v1 */
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+/* FOOTER */
+
+.footer {
+	background: var(--hero-bgd);
+}
+
+.logo-studio-footer {
+	color: var(--original-white);
+}
+
+.address {
+	font-style: normal;
+	line-height: calc(24 / 14);
+	/* or 171% */
+	color: var(--original-white);
+}
+
+.footer-contacts {
+	font-style: normal;
+	line-height: calc(24 / 14);
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+	color: var(--brand);
+}
