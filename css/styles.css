@@ -1,4 +1,5 @@
 :root {
+	/* colors */
 	--brand: #2196f3;
 	--brand-accent: #188ce8;
 	--hero-bgd: #2f303a;
@@ -31,6 +32,7 @@ body {
 
 .logo-studio-header {
 	color: var(--original-black);
+	padding-right: 93px;
 }
 
 /* Reset start --- */
@@ -39,13 +41,15 @@ body {
 
 .list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .link {
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 }
 
@@ -59,6 +63,25 @@ img {
 
 .header {
 	background: var(--original-white);
+}
+
+/* header flexes */
+
+.boxforflex-header,
+.boxforflex-nav {
+	display: flex;
+}
+
+.boxforflex-navlink,
+.boxforflex-header-contacts {
+	display: flex;
+	gap: 50px;
+}
+
+/* end of header flexes */
+
+.list-navlinks {
+	padding-right: 344px;
 }
 
 .nav-link {
@@ -95,8 +118,23 @@ img {
 	background: var(--hero-bgd);
 }
 
+.hero-container {
+	padding-bottom: 200px;
+}
+
+/* hero flexes */
+
+.boxforflex-hero-text,
+.boxforflex-hero-btn {
+	display: flex;
+	margin: 0 auto;
+}
+
+/* end of flexes */
+
 .title {
-	padding: 200px 0 30px;
+	padding-top: 200px;
+	padding-bottom: 30px;
 	width: 696px;
 	min-width: 696px;
 	font-weight: 900;
@@ -168,6 +206,22 @@ img {
 	border-radius: 4px;
 }
 
+/* portfolio flexes */
+
+.boxforflex-portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+/* .boxforflex-portfolio-item {
+	display: flex;
+	flex-basis: calc((100% - 60px) / 3);
+} */ 
+
+/* end of portfolio flexes */
+
 .portfolio-item {
 	background: var(--original-white);
 	border: 1px solid #EEE;
@@ -190,9 +244,13 @@ img {
 
 /* SECTIONS ALL --- */
 
-/*.section {
-	margin: 94px 215px;
-} */
+.section-features {
+	padding-top: 94px;
+}
+
+.section {
+	padding: 94px 0;
+} 
 
 .container {
 	width: 1200px;
@@ -201,20 +259,33 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	outline: 2px solid orange;
-	
+	margin-bottom: 0;
 }
 
 /* 4 FEATURES --- */
 
+/* sections flexes */
+
+.boxforflex-sections {
+	display: flex;
+	justify-content: space-between; 
+	gap: 30px;
+}
+
+/* end of sections flexes */
+
 .h3-features {
 	line-height: calc(16 / 14);
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	width: 270 px;
+	padding-bottom: 10px;
 }
 
 .p-features {
 	line-height: calc(24 / 14);
 	/* or 171% */
 	color: var(--contacts);
+	width: 270 px;
 }
 
 /* W.W.D. --- */
