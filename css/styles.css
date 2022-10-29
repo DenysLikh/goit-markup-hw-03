@@ -65,9 +65,8 @@ address {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-bottom: 0;
-	/* comment !*/
 	margin-right: auto;
-	outline: 2px solid orange;
+	/* outline: 2px solid orange;*/
 }
 
 .visually-hidden {
@@ -129,6 +128,7 @@ address {
 
 .header {
 	background: var(--original-white);
+	border: 1px solid #ececec;
 }
 
 .nav-link,
@@ -231,6 +231,40 @@ address {
 
 /* HERO PORTFOLIO --- */
 
+/* portfolio flexes */
+
+.portfolio-btns {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
+}
+
+.boxforflex-portfolio-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.portfolio-item:nth-child(3n + 2) {
+	margin: 0 30px;
+}
+
+.portfolio-item:nth-child(-n + 6) {
+	margin-bottom: 30px;
+}
+
+/* .boxforflex-portfolio-item {
+	justify-content: space-between;
+	flex-basis: calc((100% - 60px) / 3);	
+	row-gap: 30px;
+	column-gap: 30px;
+	display: flex;
+	flex-basis: calc((100% - 60px) / 3);
+} */
+
+/* end of portfolio flexes */
+
 .btn-portfolio {
 	min-width: 73px;
 	min-height: 38px;
@@ -254,25 +288,11 @@ address {
 	border-radius: 4px;
 }
 
-/* portfolio flexes */
-
-.boxforflex-portfolio-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 30px;
-}
-
-/* .boxforflex-portfolio-item {
-	display: flex;
-	flex-basis: calc((100% - 60px) / 3);
-} */
-
-/* end of portfolio flexes */
-
-.portfolio-item {
+.portfolio-item-text-space {
 	background: var(--original-white);
-	border: 1px solid #eee;
+	border: 1px solid #eeeeee;
+	padding: 20px 24px;
+	border-top: 0;
 }
 
 .h3-portfolio {
@@ -280,6 +300,7 @@ address {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	padding-bottom: 4px;
 }
 
 .p-portfolio {
