@@ -64,7 +64,6 @@ address {
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
-	margin-bottom: 0;
 	margin-right: auto;
 	/* outline: 2px solid orange;*/
 }
@@ -97,7 +96,7 @@ address {
 	line-height: calc(31 / 26);
 	letter-spacing: 0.03em;
 	color: var(--brand);
-	padding: 24px 0 25px 0;
+	
 }
 
 .logo-studio-header {
@@ -116,6 +115,7 @@ address {
 
 .boxforflex-nav {
 	display: flex;
+	align-items: center;
 }
 
 .boxforflex-navlink,
@@ -127,7 +127,6 @@ address {
 /* end of header flexes */
 
 .header {
-	background: var(--original-white);
 	border: 1px solid #ececec;
 }
 
@@ -176,15 +175,11 @@ address {
 
 .hero {
 	background: var(--hero-bgd);
-}
-
-.hero-container {
-	padding-bottom: 200px;
+	padding: 200px 0;
 }
 
 .title {
-	padding-top: 200px;
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 	max-width: 696px;
 	font-weight: 900;
 	font-size: 44px;
@@ -289,21 +284,20 @@ address {
 }
 
 .portfolio-item-text-space {
-	background: var(--original-white);
 	border: 1px solid #eeeeee;
 	padding: 20px 24px;
 	border-top: 0;
 }
 
-.h3-portfolio {
+.name-portfolio {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	padding-bottom: 4px;
+	margin-bottom: 4px;
 }
 
-.p-portfolio {
+.text-portfolio {
 	font-size: 16px;
 	line-height: 1.88;
 	color: var(--contacts);
@@ -328,14 +322,19 @@ address {
 	padding-bottom: 0;
 }
 
-.h3-features {
+.list-features {
+	max-width: 270px;
+}
+
+.name-features {
+	font-size: 14px;
 	display: block;
 	line-height: calc(16 / 14);
 	text-transform: uppercase;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
-.p-features {
+.text-features {
 	display: block;
 	line-height: 1.71;
 	color: var(--contacts);
@@ -358,7 +357,7 @@ address {
 
 /* TEAM --- */
 
-.h3-team {
+.name-team {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: calc(19 / 16);
@@ -366,7 +365,7 @@ address {
 	margin-bottom: 10px;
 }
 
-.p-team {
+.text-team {
 	font-size: 16px;
 	line-height: calc(19 / 16);
 	text-align: center;
@@ -398,6 +397,7 @@ address {
 }
 
 .footer-logo-text {
+	display: block;
 	margin-bottom: 20px;
 }
 
@@ -415,11 +415,14 @@ address {
 	color: var(--original-white);
 }
 
+.list-address {
+	margin-top: 9px;
+}
+
 .footer-contacts {
 	display: inline-block;
 	line-height: 1.71;
-	color: rgba(255, 255, 255, 0.6);
-	margin-top: 9px;
+	color: rgba(255, 255, 255, 0.6);	
 }
 
 .footer-contacts:hover,

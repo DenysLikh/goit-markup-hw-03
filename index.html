@@ -8,8 +8,8 @@
 		<!--normalize--> 
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
@@ -26,18 +26,16 @@
 	<body>
 		<header class="header">
 			<div class="container boxforflex-header">
-				<nav>
+				<nav class="boxforflex-nav">
 					<!--logo-->
-					<div class="boxforflex-nav">
-						<a href="./index.html" class="logo-web link">
+					<a href="./index.html" class="logo-web link">
 							<span>Web</span><span class="logo-studio-header link">Studio</span>
-						</a>
-						<ul class="list boxforflex-navlink">
+					</a>
+					<ul class="list boxforflex-navlink">
 							<li><a href="./index.html" class="nav-link link active">Студія</a></li>
 							<li><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
 							<li><a href="./index.html" class="nav-link link">Контакти</a></li>
-						</ul>
-					</div>
+					</ul>
 				</nav>
 				<!--header contacts-->
 				<ul class="list boxforflex-header-contacts">
@@ -48,8 +46,8 @@
 		</header>
 		<main>
 			<!--hero-->
-			<section class="hero">
-				<div class="container hero-container">
+			<section class="section hero">
+				<div class="container">
 					<h1 class="title boxforflex-hero-text">Ефективні рішення для вашого бізнесу</h1>
 					<button type="button" class="hero-btn pointer boxforflex-hero-btn"><span class="hero-btn-text">Замовити послугу</span></button>
 				</div>
@@ -59,21 +57,21 @@
 				<div class="container">
 					<h2 class="section-title visually-hidden">Наші переваги</h2>
 					<ul class="list boxforflex-sections">
-						<li>
-							<h3 class="h3-features">УВАГА ДО ДЕТАЛЕЙ</h3>
-							<p class="p-features">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+						<li class="list-features">
+							<h3 class="name-features">УВАГА ДО ДЕТАЛЕЙ</h3>
+							<p class="text-features">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 						</li>
-						<li>
-							<h3 class="h3-features">ПУНКТУАЛЬНІСТЬ</h3>
-							<p class="p-features">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+						<li class="list-features">
+							<h3 class="name-features">ПУНКТУАЛЬНІСТЬ</h3>
+							<p class="text-features">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 						</li>
-						<li>
-							<h3 class="h3-features">ПЛАНУВАННЯ</h3>
-							<p class="p-features">Так само консультація з широким активом значною мірою зумовлює.</p>
+						<li class="list-features">
+							<h3 class="name-features">ПЛАНУВАННЯ</h3>
+							<p class="text-features">Так само консультація з широким активом значною мірою зумовлює.</p>
 						</li>
-						<li>
-							<h3 class="h3-features">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							<p class="p-features">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+						<li class="list-features">
+							<h3 class="name-features">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+							<p class="text-features">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
 						</li>
 					</ul>
 				</div>
@@ -102,23 +100,23 @@
 					<ul class="list boxforflex-sections">
 						<li class="team-cards">
 							<img src="./images/img-igor.jpg" alt="1й член команди" width="270" height="260" />
-							<div class="team-cards-text-space"><h3 class="h3-team">Ігор Дем'яненко</h3>
-							<p lang="en" class="p-team">Product Designer</p></div>
+							<div class="team-cards-text-space"><h3 class="name-team">Ігор Дем'яненко</h3>
+							<p lang="en" class="text-team">Product Designer</p></div>
 						</li>
 						<li class="team-cards">
 							<img src="./images/img-olga.jpg" alt="2й член команди" width="270" height="260" />
-							<div class="team-cards-text-space"><h3 class="h3-team">Ольга Рєпіна</h3>
-							<p lang="en" class="p-team">Frontend Developer</p></div>
+							<div class="team-cards-text-space"><h3 class="name-team">Ольга Рєпіна</h3>
+							<p lang="en" class="text-team">Frontend Developer</p></div>
 						</li>
 						<li class="team-cards">
 							<img src="./images/img-mikola.jpg" alt="3й член команди" width="270" height="260" />
-							<div class="team-cards-text-space"><h3 class="h3-team">Микола Тарасов</h3>
-							<p lang="en" class="p-team">Marketing</p></div>
+							<div class="team-cards-text-space"><h3 class="name-team">Микола Тарасов</h3>
+							<p lang="en" class="text-team">Marketing</p></div>
 						</li>
 						<li class="team-cards">
 							<img src="./images/img-mihailo.jpg" alt="4й член команди" width="270" height="260" />
-							<div class="team-cards-text-space"><h3 class="h3-team">Михайло Єрмаков</h3>
-							<p lang="en" class="p-team">UI Designer</p></div>
+							<div class="team-cards-text-space"><h3 class="name-team">Михайло Єрмаков</h3>
+							<p lang="en" class="text-team">UI Designer</p></div>
 						</li>
 					</ul>
 				</div>
@@ -127,9 +125,9 @@
 		<footer class="footer">
 			<div class="container">
 				<!--logo text-->
-				<div class="footer-logo-text"><a href="./index.html" class="logo-web logo-web-footer link">
+				<a href="./index.html" class="footer-logo-text logo-web logo-web-footer link">
 					<span>Web</span><span class="logo-studio-footer link">Studio</span>
-				</a></div>
+				</a>
 				<!--address links-->
 				<address>
 					<ul class="list">
@@ -143,10 +141,10 @@
 								м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
-						<li>
+						<li class="list-address">
 							<a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
 						</li>
-						<li>
+						<li class="list-address">
 							<a href="tel:+380961111111" class="footer-contacts link">+38(096) 111-11-11</a>
 						</li>
 					</ul>
